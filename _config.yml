@@ -1,24 +1,24 @@
 # Permalinks
-permalink:        pretty
-relative_permalinks: true
+permalink:pretty
+relative_permalinks:true
 
 # Setup
-title:            Emily Saliba
-tagline:          Under Construction
-url:              http://emilysaliba.com
-paginate:         1
-  #name:           Emily Saliba
-  #url:            https://twitter.com/
-  email:          emilysquid@gmail.com
+title:Emily Saliba
+tagline:Under Construction
+url:http://emilysaliba.com
+paginate:1
+  #name:Emily Saliba
+  #url:https://twitter.com/
+  email:emilysquid@gmail.com
 
 # Custom vars
-version:          1.0.0
-github:
-  repo:           https://github.com/emilysquid
+version:1.0.0
+#github:
+  repo:https://github.com/emilysquid
 
 #highlighter: null
-lsi: false
-permalink: /:year/:month/:day/:title.html
-markdown: rdiscount
+lsi:false
+permalink:/:year/:month/:day/:title.html
+markdown:rdiscount
 rdiscount:
-  extensions: [smart]
+  extensions:[smart]
