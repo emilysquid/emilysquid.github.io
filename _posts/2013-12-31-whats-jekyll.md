@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What's Jekyll?
-description: "Gotalk exists to make it easy for programs to *talk with one another over the internet*, like a web app coordinating with a web server, or a bunch of programs dividing work amongst eachother"
+description: Jekyll is a simple, blog aware, static site generator.
 ---
 
 [Jekyll](http://jekyllrb.com) is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From [the project's readme](https://github.com/jekyll/jekyll/blob/master/README.markdown):

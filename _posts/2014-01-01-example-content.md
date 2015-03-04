@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Example content
+description: This is an example post provided by Poole, the layout I based my site off of.
 ---
 
 
