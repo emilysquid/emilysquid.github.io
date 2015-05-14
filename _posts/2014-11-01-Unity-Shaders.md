@@ -11,7 +11,7 @@ photo_url: "http://emilysaliba.com/public/pictures/9-LeavingEngineRoom.png"
 
 There weren't any obvious resources around, so I mainly learned from what's around the web. After about 6 tries, I made a toon shader with outline, emissive, a shadow ramp, diffuse, and specular inputs.  I gave this shader to Squidware for their game, <a href="http://game.colum.edu/projects/spacerace/">The Metacosmic Earthrace</a>.  
 
-![placeholder](http://emilysaliba.com/public/pictures/9-LeavingEngineRoom.png "Small example image")
+![placeholder](http://emilysaliba.com/public/pictures/9-LeavingEngineRoom.png "Engine Room")
 
 
 ### Code
@@ -43,7 +43,7 @@ I ended up having to write some custom lighting to make it exactly the way the t
 This is some of the earlier UI. The frog is just what I used to test my shader on.
 
 
-![placeholder](http://emilysaliba.com/public/pictures/UI.png "Small example image")
+![placeholder](http://emilysaliba.com/public/pictures/UI.png "Shader UI")
 
 
 Making the feilds is actually really simple in Unity.  Here's what they look like in ShaderLab:
