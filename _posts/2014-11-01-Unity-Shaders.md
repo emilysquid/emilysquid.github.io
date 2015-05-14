@@ -9,132 +9,57 @@ photo_url: "http://emilysaliba.com/public/pictures/9-LeavingEngineRoom.png"
   I recently started learning about ShaderLab in Unity when I found out that Strumpy is no longer supported in Unity.
 </div>
 
-There weren't any obvious resources around, so I mainly learned from what's around the web. After about 6 tries, I made a toon shader with outline, emissive, a shadow ramp, diffuse, and specular inputs.  I gave this shader to Squidware for their game, The Metacosmic Earthrace.  
+There weren't any obvious resources around, so I mainly learned from what's around the web. After about 6 tries, I made a toon shader with outline, emissive, a shadow ramp, diffuse, and specular inputs.  I gave this shader to Squidware for their game, <a href="http://game.colum.edu/projects/spacerace/">The Metacosmic Earthrace</a>.  
 
 ![placeholder](http://emilysaliba.com/public/pictures/9-LeavingEngineRoom.png "Small example image")
 
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-
-## Inline HTML elements
-
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
-
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Mark otto</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
-
-Most of these elements are styled by browsers with few modifications on our part.
-
-## Heading
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
 ### Code
 
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
+I ended up having to write some custom lighting to make it exactly the way the team wanted.
 
 {% highlight js %}
-// Example can be run directly in your JavaScript console
+    half4 CustomLighting (SurfaceOutput s, half3 lightDir, half3 viewDir, half atten)
+        {
+          
+            half3 h = normalize (lightDir + viewDir);
+            float nh = max (0, dot (s.Normal, h));
+            
+            float spec = pow (nh, 48.0);
+            half diff = max (0, dot (s.Normal, lightDir));
+            half specdiff = max(0, dot(s.Normal, spec));
+            //diff = tex2D(_Intensity, float2(diff, 0.5));
+            specdiff = tex2D(_SpecMap, float2(specdiff, 0.5));
 
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
+      half4 c;
+            c.rgb = (s.Albedo * _LightColor0.rgb * diff + _LightColor0.rgb * (specdiff * _Shininess)) * (atten * 2);
+            c.a = s.Alpha;
+            return c;
+       }
 {% endhighlight %}
 
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+This is some of the earlier UI. The frog is just what I used to test my shader on.  
+![placeholder](http://emilysaliba.com/public/pictures/UI.png "Small example image")
 
-### Gists via GitHub Pages
 
-Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.
+Making the feilds is actually really simple in Unity.  Here's what they look like in ShaderLab:
 
-{% gist 5555251 gist.md %}
-
-Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper.
-
-### Lists
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
-
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-
-<dl>
-  <dt>HyperText Markup Language (HTML)</dt>
-  <dd>The language used to describe and define the content of a Web page</dd>
-
-  <dt>Cascading Style Sheets (CSS)</dt>
-  <dd>Used to describe the appearance of Web content</dd>
-
-  <dt>JavaScript (JS)</dt>
-  <dd>The programming language used to build advanced Web sites and applications</dd>
-</dl>
-
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-### Images
-
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
-
-![placeholder](http://placehold.it/800x400 "Large example image")
-![placeholder](http://placehold.it/400x200 "Medium example image")
-![placeholder](http://placehold.it/200x200 "Small example image")
-
-### Tables
-
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
-
------
-
-Want to see something else added? <a href="https://github.com/poole/poole/issues/new">Open an issue.</a>
+{% highlight js %}
+  Properties {
+    _MainTex ("Base (RGB) Trans (A)", 2D) = "white" {}
+    _Color ("Main Color", Color) = (1,1,1,1)
+    
+    _DiffuseColor ("Diffuse Color", Color) = (1,1,1,1)
+    //_Bump ("Bump", 2D) = "bump" {}
+    
+    _SpecMap ("Specular Map", 2D) = "grey" {}
+    _Shininess ("Shininess", Range (0.01, 1)) = 0.078125
+    
+    _Emissive("Emissive Map", 2D) = "black" {}
+    _Intensity("Intensity", Range(0,10) ) = 0.5
+    
+    _Outline("Outline", Range(0, 1)) = 0.1
+    
+    
+  }
+{% endhighlight %}
