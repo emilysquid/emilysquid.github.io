@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Arduino + WebGL + Chrome"
-photo_url: "http://emilysaliba.com/public/pictures/3Dparticles.png"
+photo_url: "http://emilysaliba.com/public/pictures/3dparticles.png"
 ---
 
 
