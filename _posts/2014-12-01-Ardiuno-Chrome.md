@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Shaders in Unity"
+title: "Arduino + WebGL + Chrome"
 photo_url: "http://emilysaliba.com/public/pictures/3Dparticles.png"
 ---
 
@@ -13,7 +13,7 @@ I started out messing around with arduino.  I got an accelerometer hooked up, a 
 
 Here's the old set up. It's a little janky looking.
 
-![placeholder](http://emilysaliba.com/public/pictures/9-LeavingEngineRoom.png "Bread board set up")
+![placeholder](http://emilysaliba.com/public/pictures/arduino.png "Bread board set up")
 
 When I got to the point that I wanted some kind of feedback on the screen, I had an urge to get the Arduino to communicate with WebGL.  I couldn't find much online at the time. I think I found just one project someone had done.  I did manage to find this cool js app called href="http://involt.github.io">Involt</a> It bridged the gap between Arduino and HTML.  From there I opened up a canvas and put in my WebGL.
 
