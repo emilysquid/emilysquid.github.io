@@ -38,7 +38,11 @@ I ended up having to write some custom lighting to make it exactly the way the t
        }
 {% endhighlight %}
 
-This is some of the earlier UI. The frog is just what I used to test my shader on.  
+
+
+This is some of the earlier UI. The frog is just what I used to test my shader on.
+
+
 ![placeholder](http://emilysaliba.com/public/pictures/UI.png "Small example image")
 
 
