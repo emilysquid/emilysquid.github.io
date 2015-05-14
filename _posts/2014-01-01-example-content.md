@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shaders in Unity
+title: "Shaders in Unity"
 photo_url: "emilysaliba.com/public/pictures/9-LeavingEngineRoom.png"
 ---
 
