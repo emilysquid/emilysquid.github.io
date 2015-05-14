@@ -30,3 +30,4 @@ I even made this little icon for the app.
 
 ![placeholder](http://emilysaliba.com/public/pictures/icon128.png "app icon")
 
+I also had a little fun with it and put it in an ornate box.  When the box the is open and light is shown, the 3D particles rapidly change direction and color in unison.  I wanted it to look glithy.  I'll put a video here soon.
