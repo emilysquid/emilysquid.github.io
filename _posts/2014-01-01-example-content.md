@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Example content
-description: This is an example post provided by Poole, the layout I based my site off of.
+title: Shaders in Unity
+photo_url: "emilysaliba.com/public/pictures/9-LeavingEngineRoom.png"
 ---
 
 
