@@ -11,7 +11,7 @@ photo_url: "http://emilysaliba.com/public/pictures/9-LeavingEngineRoom.png"
 
 There weren't any obvious resources around, so I mainly learned from what's around the web. After about 6 tries, I made a toon shader with outline, emissive, a shadow ramp, diffuse, and specular inputs.  I gave this shader to Squidware for their game, The Metacosmic Earthrace.  
 
-![placeholder](http://emilysaliba.com/public/pictures/9-LeavingEngineRoom.png "Large example image")
+![placeholder](http://emilysaliba.com/public/pictures/9-LeavingEngineRoom.png "Small example image")
 
 
 Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
