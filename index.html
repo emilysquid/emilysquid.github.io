@@ -52,6 +52,7 @@ layout: default
 
         <!-- Projects Row -->
         <div class="row">
+            {% for post in site.posts %}
             <div class="col-md-3 portfolio-item">
                 <a href="#">
                     <img class="img-responsive" src="{{ post.image }}" alt="">
@@ -72,6 +73,7 @@ layout: default
                     <img class="img-responsive" src="{{ post.image }}" alt="">
                 </a>
             </div>
+            {% endfor %}
         </div>
         <!-- /.row -->
 
