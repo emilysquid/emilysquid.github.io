@@ -20,3 +20,10 @@ footer {
 	max-width: 60px;
 	margin-top: -5px;
 }
+
+h3 {
+  position: absolute;
+  bottom: -18px;
+  left: 17px;
+  font-size: 2em;
+}
