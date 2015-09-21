@@ -9,8 +9,7 @@ I ended up having to write some custom lighting to make it exactly the way the t
 
 &lt;code&gt;
     half4 CustomLighting (SurfaceOutput s, half3 lightDir, half3 viewDir, half atten)
-        {
-          
+        {        
             half3 h = normalize (lightDir + viewDir);
             float nh = max (0, dot (s.Normal, h));
             
@@ -18,7 +17,6 @@ I ended up having to write some custom lighting to make it exactly the way the t
             half diff = max (0, dot (s.Normal, lightDir));
             half specdiff = max(0, dot(s.Normal, spec));
             specdiff = tex2D(_SpecMap, float2(specdiff, 0.5));
-
       half4 c;
             c.rgb = (s.Albedo * _LightColor0.rgb * diff + _LightColor0.rgb * (specdiff * _Shininess)) * (atten * 2);
             c.a = s.Alpha;
