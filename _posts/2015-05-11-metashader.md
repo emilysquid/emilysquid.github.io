@@ -7,7 +7,7 @@ I was the technical artist for &lt;a target='_blank' href=http://game.colum.edu/
 
 I ended up having to write some custom lighting to make it exactly the way the team wanted.
 
-&lcub;&percnt; highlight js &percnt;&rcub;{
+&lt;code&gt;
     half4 CustomLighting (SurfaceOutput s, half3 lightDir, half3 viewDir, half atten)
         {
           
@@ -24,4 +24,4 @@ I ended up having to write some custom lighting to make it exactly the way the t
             c.a = s.Alpha;
             return c;
        }
-}&lcub;&percnt; endhighlight &percnt;&rcub;
+&lt;/code&gt;
