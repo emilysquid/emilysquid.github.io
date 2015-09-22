@@ -12,12 +12,11 @@ I ended up having to write some custom lighting to make it exactly the way the t
         {        
             half3 h = normalize (lightDir + viewDir);
             float nh = max (0, dot (s.Normal, h));
-            
             float spec = pow (nh, 48.0);
             half diff = max (0, dot (s.Normal, lightDir));
             half specdiff = max(0, dot(s.Normal, spec));
             specdiff = tex2D(_SpecMap, float2(specdiff, 0.5));
-      half4 c;
+      		half4 c;
             c.rgb = (s.Albedo * _LightColor0.rgb * diff + _LightColor0.rgb * (specdiff * _Shininess)) * (atten * 2);
             c.a = s.Alpha;
             return c;
