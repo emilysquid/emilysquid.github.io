@@ -53,12 +53,14 @@ layout: default
         <div class="row">
             <h4>Arduino + WebGL + Chrome</h4>
             {% for post in site.posts %}
-            <div class="col-md-3 portfolio-item">
-                <a href="{{ post.image }}" data-lightbox="portfolio" data-title="{{post.content}}">
-                    <h3>{{ post.title }}</h3>
-                    <img class="img-responsive" src="{{ post.image }}" alt="">
-                </a>
-            </div>
+                {%if post.category contains "arduino"%}
+                    <div class="col-md-3 portfolio-item">
+                        <a href="{{ post.image }}" data-lightbox="portfolio" data-title="{{post.content}}">
+                            <h3>{{ post.title }}</h3>
+                            <img class="img-responsive" src="{{ post.image }}" alt="">
+                        </a>
+                    </div>
+                {%endif%}   
             {% endfor %}
         </div>
         <!-- /.row -->
