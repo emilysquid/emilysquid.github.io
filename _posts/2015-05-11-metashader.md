@@ -4,7 +4,7 @@ title: Metacosmic Earthrace
 image: /img/9-LeavingEngineRoom.png
 category: shader
 ---
-I was the technical artist for &lt;a target='_blank' href=http://game.colum.edu/projects/spacerace/&gt; The Metacosmic Earthrace&lt;/a&gt;.  Usually, this team relied on Strumpy for their shaders, but the newest version of Unity no longer supported it.  Without a license to any kind of software to create shaders, I learned how to code shaders in Unity's shaderlab language. There weren't any obvious resources around, so I had to search around for little snips of information. After about 6 tries, I made a toon shader with outline, emissive, a shadow ramp, diffuse, and specular inputs.  I gave this shader to Squidware for the game. 
+I was the technical artist for &lt;a target=_blank href=http://game.colum.edu/projects/spacerace/&gt;The Metacosmic Earthrace&lt;/a&gt;.  Usually, this team relied on Strumpy for their shaders, but the newest version of Unity no longer supported it.  Without a license to any kind of software to create shaders, I learned how to code shaders in Unity's shaderlab language. There weren't any obvious resources around, so I had to search around for little snips of information. After about 6 tries, I made a toon shader with outline, emissive, a shadow ramp, diffuse, and specular inputs.  I gave this shader to Squidware for the game. 
 
 I ended up having to write some custom lighting to make it exactly the way the team wanted.
 &lt;pre&gt;
