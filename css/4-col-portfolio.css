@@ -28,4 +28,19 @@ h3 {
   font-size: 2em;
   color: white;
   text-shadow: 0 0 3px #000;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.portfolio-item figure{
+	background: #b4d5cf;
+}
+
+.portfolio-item figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.portfolio-item figure:hover img {
+	opacity: .5;
 }

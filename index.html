@@ -24,7 +24,7 @@ layout: default
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="http://emilysaliba.com/img/EmilyResume.pdf">Resume</a>
+                        <a href="http://emilysaliba.com/img/EmilyResume.pdf" target="_blank">Resume</a>
                     </li>
                     <li>
                         <a href="mailto:emilysquid@gmail.com">Email</a>
@@ -57,7 +57,7 @@ layout: default
                     <div class="col-md-3 portfolio-item">
                         <a href="{{ post.image }}" data-lightbox="portfolio" data-title="{{post.content}}">
                             <h3>{{ post.title }}</h3>
-                            <img class="img-responsive" src="{{ post.image }}" alt="">
+                            <figure><img class="img-responsive" src="{{ post.image }}" alt=""></figure>
                         </a>
                     </div>
                 {%endif%}   
