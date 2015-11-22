@@ -17,11 +17,11 @@ body {
 }
 
 .page-header{
-	border-bottom: #d3d3d3;
+	border-bottom: 1px solid #d3d3d3;
 }
 
 hr{
-	border-top: #d3d3d3;
+	border-top: 1px solid #d3d3d3;
 }
 
 .portfolio-item {
