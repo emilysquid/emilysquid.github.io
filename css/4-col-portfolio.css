@@ -22,9 +22,12 @@ footer {
 }
 
 .portfolio-item h3 {
-  position: absolute;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+/*  position: absolute;
   bottom: -10px;
-  left: 22px;
+  left: 22px;*/
   font-size: 2em;
   color: white;
   /*text-shadow: 0 0 3px #000;*/
