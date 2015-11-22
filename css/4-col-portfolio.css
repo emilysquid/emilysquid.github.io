@@ -34,7 +34,7 @@ footer {
   opacity: 0;
 }
 
-.portfolio-item h3:hover{	
+.portfolio-item:hover h3{	
 	visibility: visible;
 	opacity: 1;
 	-webkit-transition: visibility opacity 0.3s;
