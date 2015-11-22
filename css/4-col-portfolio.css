@@ -12,6 +12,10 @@ body {
 	background-color: #3a436c;
 }
 
+.navbar-inverse a{
+	color: #b4d5cf;
+}
+
 .portfolio-item {
     margin-bottom: 25px;
 }
@@ -29,8 +33,8 @@ footer {
 	left: 0;
     position:absolute;
     text-align:center;
-    top: 30px;
-    width: 100%
+    top: 50px;
+    width: 100%;
 /*  position: absolute;
   display: table-cell;
   text-align: center;
