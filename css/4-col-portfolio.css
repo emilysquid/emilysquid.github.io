@@ -16,6 +16,14 @@ body {
 	color: #b4d5cf;
 }
 
+.page-header{
+	border-bottom: #d3d3d3;
+}
+
+hr{
+	border-top: #d3d3d3;
+}
+
 .portfolio-item {
     margin-bottom: 25px;
 }
