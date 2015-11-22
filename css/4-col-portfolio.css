@@ -12,7 +12,7 @@ body {
 	background-color: #3a436c;
 }
 
-.navbar-inverse a{
+.navbar-collapse a{
 	color: #b4d5cf;
 }
 
@@ -35,16 +35,6 @@ footer {
     text-align:center;
     top: 50px;
     width: 100%;
-/*  position: absolute;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  display: table;
-  top:0;
-  left:0;*/
-/*  position: absolute;
-  bottom: -10px;
-  left: 22px;*/
   font-size: 2em;
   color: white;
   /*text-shadow: 0 0 3px #000;*/
@@ -70,6 +60,6 @@ footer {
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-.portfolio-item figure:hover img {
+.portfolio-item figure:hover img, .portfolio-item h3 {
 	opacity: .5;
 }
