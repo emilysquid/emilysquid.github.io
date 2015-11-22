@@ -27,8 +27,8 @@ footer {
   left: 22px;
   font-size: 2em;
   color: white;
-  text-shadow: 0 0 3px #000;
-  font-family: 'Open Sans', sans-serif;
+  /*text-shadow: 0 0 3px #000;*/
+  font-family: inherit;
   font-weight: 300;
   visibility: hidden;
   opacity: 0;
@@ -36,7 +36,7 @@ footer {
 
 .portfolio-item:hover h3{	
 	visibility: visible;
-	opacity: 1;
+	opacity: 1 !important;
 	-webkit-transition: visibility opacity 0.3s;
 }
 
