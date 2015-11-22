@@ -13,7 +13,7 @@ body {
 }
 
 .navbar-collapse a{
-	color: #b4d5cf;
+	color: #b4d5cf !important;
 }
 
 .portfolio-item {
@@ -60,6 +60,6 @@ footer {
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-.portfolio-item figure:hover img, .portfolio-item h3 {
+.portfolio-item figure:hover img, h3:hover {
 	opacity: .5;
 }
