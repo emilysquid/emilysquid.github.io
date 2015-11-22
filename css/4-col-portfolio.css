@@ -12,8 +12,8 @@ body {
 	background-color: #3a436c;
 }
 
-.navbar-collapse a{
-	color: #b4d5cf !important;
+.navbar-inverse .navbar-nav>li>a{
+	color: #b4d5cf;
 }
 
 .portfolio-item {
@@ -35,14 +35,14 @@ footer {
     text-align:center;
     top: 50px;
     width: 100%;
-  font-size: 2em;
-  color: white;
-  /*text-shadow: 0 0 3px #000;*/
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 300;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 5;
+  	font-size: 2em;
+  	color: white;
+  	/*text-shadow: 0 0 3px #000;*/
+  	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  	font-weight: 300;
+  	visibility: hidden;
+  	opacity: 0;
+  	z-index: 5;
 }
 
 .portfolio-item:hover h3{	
@@ -60,6 +60,6 @@ footer {
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-.portfolio-item figure:hover img, h3:hover {
+h3:hover, .portfolio-item figure:hover img{
 	opacity: .5;
 }
