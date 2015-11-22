@@ -6,7 +6,7 @@
 
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    background-color: #e8ef53;
+    background-color: #e8e5f3;
 }
 
 .portfolio-item {
@@ -27,6 +27,9 @@ footer {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+  display: table;
+  top:0;
+  left:0;
 /*  position: absolute;
   bottom: -10px;
   left: 22px;*/
