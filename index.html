@@ -69,10 +69,11 @@ layout: default
         <!-- Projects Row -->
         <div class="row">
             <h4>Shaders</h4>
+            <iframe width="263" height="197" frameborder="0" src="https://www.shadertoy.com/embed/Xst3zN?gui=true&t=10&paused=false&muted=true" allowfullscreen></iframe>
             {% for post in site.posts %}
                 {%if post.category contains "shader"%}
                     <div class="col-md-3 portfolio-item">
-                        <iframe width="263" height="197" frameborder="0" src="https://www.shadertoy.com/embed/Xst3zN?gui=true&t=10&paused=false&muted=true" allowfullscreen></iframe>
+
                         <a href="{{ post.image }}" data-lightbox="portfolio" data-title="{{post.content}}">
                             <figure><h3>{{ post.title }}</h3>
                             <img class="img-responsive" src="{{ post.image }}" alt=""></figure>
