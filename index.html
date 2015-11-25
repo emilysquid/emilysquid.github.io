@@ -72,6 +72,7 @@ layout: default
             {% for post in site.posts %}
                 {%if post.category contains "shader"%}
                     <div class="col-md-3 portfolio-item">
+                        <iframe width="600" height="450" frameborder="0" src="https://www.shadertoy.com/embed/Xst3zN?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
                         <a href="{{ post.image }}" data-lightbox="portfolio" data-title="{{post.content}}">
                             <figure><h3>{{ post.title }}</h3>
                             <img class="img-responsive" src="{{ post.image }}" alt=""></figure>
