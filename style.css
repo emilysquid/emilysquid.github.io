@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+body {
+  background-color: white;
+  background-size: cover;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+#middle{
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-55%); 
+  -webkit-transform: translateY(-55%);
+  transform: translateY(-55%);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+p {
+  text-decoration: none;
+  /*color: #826b99;*/
+  color: #706b99;
+  font-size: 5.5vw;
+
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-55%);
+  -webkit-transform: translateY(-55%);
+  transform: translateY(-55%);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+    width: max-content;
+}
+
+
+
+p a {
+  text-decoration: none;
+  color: #706b99;
+  font-size: 5.5vw;
+  text-align: center;
+    font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  display: inline-block;
+  -ms-transition: -ms-transform 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+p a:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: transparent;
+  transition: width 1s ease, background-color 1s ease;
+}
+
+p a:hover:after {
+  width: 100%;
+  background: #706b99;
+}
+
+
+
+@media only screen and (max-device-width:600px){
+  body{
+    width: 100%;
+  }
+  p, p a{
+    font-size: 9vw;
+  }
+  .socmed{
+    min-width: 20%;
+  }
+  .sm{
+    width: 30px;
+  }
+  .logo{
+    max-width: 40px;
+  }
+}

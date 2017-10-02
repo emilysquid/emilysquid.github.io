@@ -1,191 +1,47 @@
----
-layout: default
----
-<section class="content">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Emily Saliba</title>
+
+    <!--added-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+	    <style>
+        #container {
+            background: #000;
+            /*removed height and width*/
+            margin: 0px;
+            overflow: hidden;
+        }
+    </style>
+
+</head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="">
-                    <img class="logo" src="/images/EmilyLogo.png" alt="">
-                </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="http://emilysaliba.com/img/EmilyResume.pdf" target="_blank">Resume</a>
-                    </li>
-                    <li>
-                        <a href="mailto:emilysquid@gmail.com">emilysquid@gmail.com</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-
-        <!-- Page Heading -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Emily Saliba
-                    <small>Technical Artist / Programmer</small>
-                </h1>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Projects Row -->
-        <div class="row">
-            <h4>Arduino + WebGL + Chrome</h4>
-            {% for post in site.posts %}
-                {%if post.category contains "arduino"%}
-                    <div class="col-md-3 portfolio-item">
-                        <a href="{{ post.image }}" data-lightbox="portfolio" data-title="{{post.content}}">
-                            <figure><h3>{{ post.title }}</h3>
-                            <img class="img-responsive" src="{{ post.image }}" alt=""></figure>
-                        </a>
-                    </div>
-                {%endif%}   
-            {% endfor %}
-        </div>
-        <!-- /.row -->
-
-
-        <!-- Projects Row -->
-        <div class="row">
-            <h4>Shaders</h4>
-            <iframe width="263" height="197" frameborder="0" src="https://www.shadertoy.com/embed/Xst3zN?gui=true&t=10&paused=false&muted=true" allowfullscreen></iframe>
-            {% for post in site.posts %}
-                {%if post.category contains "shader"%}
-                    <div class="col-md-3 portfolio-item">
-                        <a href="{{ post.image }}" data-lightbox="portfolio" data-title="{{post.content}}">
-                            <figure><h3>{{ post.title }}</h3>
-                            <img class="img-responsive" src="{{ post.image }}" alt=""></figure>
-                        </a>
-                    </div>
-                {%endif%}
-            {% endfor %}
-        </div>
-        <!-- /.row -->
-
-        <!-- Projects Row -->
-        <div class="row">
-            <h4>Girls Who Code</h4>
-            {% for post in site.posts %}
-                {%if post.category contains "GWC"%}
-                    <div class="col-md-3 portfolio-item">
-                        <a href="{{ post.image }}" data-lightbox="portfolio" data-title="{{post.content}}">
-                            <figure><h3>{{ post.title }}</h3>
-                            <img class="img-responsive" src="{{ post.image }}" alt=""></figure>
-                        </a>
-                    </div>
-                {%endif%}
-            {% endfor %}
-        </div>
-        <!-- /.row -->
-
-
-        <!-- Projects Row -->
-        <div class="row">
-            <h4>Websites</h4>
-            {% for post in site.posts %}
-                {%if post.category contains "sites"%}
-                    <div class="col-md-3 portfolio-item">
-                        <a href="{{ post.image }}" data-lightbox="portfolio" data-title="{{post.content}}">
-                            <figure><h3>{{ post.title }}</h3>
-                            <img class="img-responsive" src="{{ post.image }}" alt=""></figure>
-                        </a>
-                    </div>
-                {%endif%}
-            {% endfor %}
-        </div>
-        <!-- /.row -->
-
-        <!-- Projects Row -->
-<!--         <div class="row">
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-        </div> -->
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Pagination -->
-<!--         <div class="row text-center">
-            <div class="col-lg-12">
-                <ul class="pagination">
-                    <li>
-                        <a href="#">&laquo;</a>
-                    </li>
-                    <li class="active">
-                        <a href="#">1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">4</a>
-                    </li>
-                    <li>
-                        <a href="#">5</a>
-                    </li>
-                    <li>
-                        <a href="#">&raquo;</a>
-                    </li>
-                </ul>
-            </div>
-        </div> -->
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Emily Saliba 2015</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer>
-
+	<div id="container">
+        <!--<div id="middle">-->
+            <p>
+                Emily Saliba<br />
+                <a href="https://www.linkedin.com/in/emily-saliba/">LinkedIn</a><br />
+                <a href="http://emilysaliba.com/img/EmilyResume.pdf">Resume</a><br />
+                <a href="mailto:emilysquid@gmail.com">Say hi!</a>
+            </p>
+        <!--</div>-->
     </div>
 
+<script src="js/three.min.js"></script>
+
+<script src="js/OrbitControls.js"></script>
+
+<script src="js/particleSystem.js"></script>
+
+
+
 </body>
-</section>
+
+
+</html>
