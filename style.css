@@ -25,7 +25,7 @@ p {
   text-decoration: none;
   /*color: #826b99;*/
   color: #706b99;
-  font-size: 5.5vw;
+  font-size: 5vw;
 
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
@@ -39,6 +39,8 @@ p {
   left: 0;
   right: 0;
     width: max-content;
+  letter-spacing: -.03em;
+
 }
 
 
@@ -46,7 +48,7 @@ p {
 p a {
   text-decoration: none;
   color: #706b99;
-  font-size: 5.5vw;
+  font-size: 5vw;
   text-align: center;
     font-family: 'Raleway', sans-serif;
   font-weight: lighter;
@@ -54,6 +56,8 @@ p a {
   -ms-transition: -ms-transform 0.5s;
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
+  letter-spacing: -.03em;
+
 }
 
 p a:after {
